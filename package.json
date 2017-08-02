@@ -1,0 +1,36 @@
+{
+  "name": "oidc-token-validator",
+  "version": "1.0.0",
+  "description": "Used to validate the id-token received from idam using the idam provided public key and extract the claims to be used by application",
+  "main": "index.js",
+  "author": "padman.balasubramanian@pwc.com",
+  "license": "ISC",
+  "homepage": "https://github.pwc.com/AEC/idam-token-validator",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.pwc.com/AEC/idam-token-validator.git"
+  },
+  "bugs": {
+    "url": "https://github.pwc.com/AEC/idam-token-validator/issues"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "async": "^2.5.0",
+    "jsonwebtoken": "^7.4.1",
+    "node-rsa": "^0.4.2",
+    "request": "^2.81.0",
+    "url-join": "^2.0.2",
+    "x509": "^0.3.2",
+    "http-status": "^0.2.5",
+    "dotenv": "^4.0.0",
+    "redis": "^2.7.1",
+    "winston": "^2.3.1"
+  },
+  "devDependencies": {
+    "eslint": "^4.3.0",
+    "eslint-config-airbnb-base": "^11.3.1",
+    "eslint-plugin-import": "^2.7.0"
+  }
+}
