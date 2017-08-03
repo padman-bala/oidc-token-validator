@@ -36,7 +36,7 @@ const createCert = (x5c) => {
 };
 
 const verify = function () {
-  const idamDiscUrl = process.env.idamDiscUrl || 'https://fedsvc-dev.pwc.com/ofisidd/api/discovery';
+  const idamDiscUrl = process.env.idamDiscUrl;
   const redisKey = 'getSigningCerts';
   return (req, res, next) => {
     winston.log('info', 'IdamTokenValidator: verify()');
